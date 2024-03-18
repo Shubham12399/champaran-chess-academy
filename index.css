@@ -1,0 +1,117 @@
+@font-face {
+  font-family: geist;
+  src: url("./assets/GeistVariableVF.ttf");
+}
+* {
+  font-family: geist !important;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  /* user-select: none; */
+}
+html,
+body {
+  background-color: #fefaf6;
+}
+
+#home_header {
+  width: 100%;
+  height: 740px;
+  /* background-image: url("/assets/ttten.svg"); */
+  background-size: 100% 110%;
+  background-repeat: repeat-x;
+  background-color: black;
+  /* transform: rotateZ(180deg); */
+  color: white;
+}
+.header_img {
+  max-width: 900px;
+  margin-inline: auto;
+}
+img {
+  user-select: none;
+}
+.main_link {
+  color: #ff612c;
+}
+.section_icon {
+  width: 90px;
+  margin-top: -6rem;
+  margin-bottom: 1rem;
+}
+.static_section {
+  width: 100%;
+  background-image: url("/assets/—Pngtree—a\ 3d\ illustration\ of\ lined_5787192.jpg");
+  background-size: 100%;
+  background-repeat: repeat-x;
+}
+.our_story_top_left_border::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  top: 0;
+}
+.our_story_top_right_border::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  background-color: black;
+  top: 0;
+}
+.first_our_story_left_border::after {
+  top: 10px !important;
+}
+.footer_section {
+  width: 100%;
+  min-height: 350px;
+  background-image: url("/assets/—Pngtree—a\ 3d\ illustration\ of\ lined_5787192.jpg");
+  background-size: 100%;
+}
+.absolute_image {
+  width: 640px;
+}
+.story_right_section {
+  margin-left: 4px;
+}
+@media screen and (max-width: 900px) {
+    .section_icon {
+        width: 50px;
+        margin-top: 0;
+      }
+      .absolute_image {
+        width: 300px;
+        display: hidden;
+      }
+}
+@media screen and (max-width: 500px) {
+  .home_header {
+    height: 90vh;
+  }
+ 
+  .main_link {
+    font-size: 0.815rem;
+  }
+  .our_story_top_right_border::after {
+    right: auto;
+    left: 0;
+  }
+  .our_story_top_left_border::after,
+  .our_story_top_right_border::after,
+  .first_our_story_left_border::after {
+    top: 1.75rem !important;
+  }
+  .story_right_section {
+    margin-left: 0px;
+    text-align: left !important;
+  }
+  .absolute_image {
+    width: 300px;
+  }
+}
